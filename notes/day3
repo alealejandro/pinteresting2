@@ -1,0 +1,35 @@
+Create a new rails app
+
+  $ rails new (PROJECT NAME)
+  $ rails new pinteresting 
+
+Run rails server from within project, so it knows which application to run that server for.
+
+	$ cd pinteresting
+  $ rails server 
+  $ rails s
+  $ ctrl + c
+
+Setup git 
+
+  $ git config --global user.name "MY NAME"
+  $ git config --global user.email "MY EMAIL"
+
+  To check:
+
+    $ git config --global user.name
+    $ git config --global user.email
+
+Initialize git in project
+
+  $ git init
+  $ git status
+
+Get rid of .DS_STORE .gitignore file - I guess rails automatically doesn't have .DS_STORE
+
+Commit changes
+
+  $ git add .
+  $ git commit -am "Create initial repo"
+
+  -a flag helps keep track of deleted files
