@@ -1,35 +1,69 @@
-Create a new rails app
+Day 3
 
-  $ rails new (PROJECT NAME)
-  $ rails new pinteresting 
+	Create a new rails app
 
-Run rails server from within project, so it knows which application to run that server for.
+	  $ rails new (PROJECT NAME)
+	  $ rails new pinteresting 
 
-	$ cd pinteresting
-  $ rails server 
-  $ rails s
-  $ ctrl + c
+	Run rails server from within project, so it knows which application to run that server for.
 
-Setup git 
+		$ cd pinteresting
+	  $ rails server 
+	  $ rails s
+	  $ ctrl + c
 
-  $ git config --global user.name "MY NAME"
-  $ git config --global user.email "MY EMAIL"
+Day 4
 
-  To check:
+	Setup git 
 
-    $ git config --global user.name
-    $ git config --global user.email
+	  $ git config --global user.name "MY NAME"
+	  $ git config --global user.email "MY EMAIL"
 
-Initialize git in project
+	  To check:
 
-  $ git init
-  $ git status
+	    $ git config --global user.name
+	    $ git config --global user.email
 
-Get rid of .DS_STORE .gitignore file - I guess rails automatically doesn't have .DS_STORE
+	Initialize git in project
 
-Commit changes
+	  $ git init
+	  $ git status
 
-  $ git add .
-  $ git commit -am "Create initial repo"
+	Get rid of .DS_STORE .gitignore file
 
-  -a flag helps keep track of deleted files
+	  I guess rails automatically doesn't have .DS_STORE
+
+	Commit changes
+
+	  $ git add .
+	  $ git commit -am "Create initial repo"
+
+	  -a flag helps keep track of deleted files
+
+	Go back to last version:
+
+    $ git checkout -f
+
+Day 5
+
+  Use SSH to connect to github account from local.
+
+  Create a new key
+
+    $ ssh-keygen -t rsa -C "MY EMAIL"
+    Enter passphrase
+
+  Now we have a key, let's add that key to github
+
+    google: github ssh keys & Follow instructions
+
+  Once all setup, create a new repo for your project
+
+  ALREADY SET UP SSH ONCE, NEVER AGAIN.
+
+  $ git remote add origin https://github.com/alealejandro/pinteresting2.git
+
+  $ git push origin master
+
+  https://stackoverflow.com/questions/10904339/github-fatal-remote-origin-already-exists
+
